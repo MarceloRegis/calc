@@ -10,6 +10,9 @@
     margin-right: 5px;
   }
   
+  #titulo-card{
+    text-align: center;
+  }
   #distanciadamensagemcss{
     font-weight: bold;
   }
@@ -18,7 +21,7 @@
     padding: 10px !important;
   }
   
-  .centralizar-dados, #mySelect{
+  .centralizar-dados, #meuSelectEspera, #meuSelectDeslocamento{
     text-align: center;
   }
   #detail {
@@ -48,6 +51,8 @@
     font-size: 2ch;
   }
   .linha {
+    text-align: center !important;
+    align-items: center;
     margin-right: 20px;
     width: 360px;
   }

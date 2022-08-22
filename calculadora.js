@@ -80,12 +80,15 @@ function findRoute() {
             
         } else {
             detail.style.display = 'none';
-            alert("Opa! Parece que o endereÃ§o estÃ¡ incorreto.")
+            alert("Opa! Parece que o endereço está errado, tente novamente!")
         }
 
-        var x = document.getElementById("mySelect").value;
-        var opcaoDoSelect = parseInt(x);
-        var precoAdicionalTaxaDeEspera = opcaoDoSelect + totalValorIda;
+        var x = document.getElementById("meuSelectEspera").value;
+        var y = document.getElementById("meuSelectDeslocamento").value;
+        var opcaoDoSelectEspera = parseInt(x);
+        var opcaoDoSelectDeslocamento = parseInt(y);
+        var precoAdicionalTaxaDeEspera = opcaoDoSelectEspera + opcaoDoSelectDeslocamento+ totalValorIda;
+
         // var precoAdicionalTaxaDeEsperaVolta = opcaoDoSelect + totalValorVolta;
         document.getElementById("price").innerHTML = precoAdicionalTaxaDeEspera.toLocaleString('pt-BR', {
             style: 'currency',
