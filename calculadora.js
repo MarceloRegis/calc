@@ -61,21 +61,21 @@ function findRoute() {
             }
             
 
-            // // Volta
-            // var totalValorVolta = (distancia * valorKM) * 1.8;
+            // Volta
+            var totalValorVolta = (distancia * valorKM) * 2.0;
 
-            // if (distancia <= 19.9) {
-            //     mensagem.style.display = 'block';
-            //     detail.style.display = 'none';
+            if (distancia <= 19.9) {
+                mensagem.style.display = 'block';
+                detail.style.display = 'none';
                 
-            // } else {
-            //     document.getElementById("price2").innerHTML = totalValorVolta.toLocaleString('pt-BR', {
-            //         style: 'currency',
-            //         currency: 'BRL'
-            //     });
-            //     detail.style.display = 'block';
-            //     mensagem.style.display = 'none';
-            // }
+            } else {
+                document.getElementById("price2").innerHTML = totalValorVolta.toLocaleString('pt-BR', {
+                    style: 'currency',
+                    currency: 'BRL'
+                });
+                detail.style.display = 'block';
+                mensagem.style.display = 'none';
+            }
 
             
         } else {
